@@ -1,0 +1,429 @@
+@charset "UTF-8";
+/*!
+ * Francisco Pedroso 
+ */
+/* === */
+* {
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden; }
+
+img {
+  -webkit-filter: blur(0); }
+
+[class*="adsanity-"] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important; }
+  [class*="adsanity-"] .ad-300x250 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important; }
+    [class*="adsanity-"] .ad-300x250 a {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important; }
+      [class*="adsanity-"] .ad-300x250 a img {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important; }
+
+.width-100 {
+  width: 100%; }
+
+.height-100 {
+  height: 100%; }
+
+.bg-no-repeat {
+  background-repeat: no-repeat; }
+
+.bg-contain {
+  background-size: contain; }
+
+.bg-cover {
+  background-size: cover; }
+
+.debug {
+  outline: solid 1px red; }
+
+h1 {
+  font-size: 60px;
+  line-height: 70px; }
+  @media (max-width: 1023px) {
+    h1 {
+      font-size: 40px;
+      line-height: 46px; } }
+
+h2 {
+  font-size: 56px;
+  line-height: 65px; }
+  @media (max-width: 1023px) {
+    h2 {
+      font-size: 38px;
+      line-height: 43px; } }
+
+h3 {
+  font-size: 40px;
+  line-height: 46px; }
+  @media (max-width: 1023px) {
+    h3 {
+      font-size: 32px;
+      line-height: 48px; } }
+
+h4 {
+  font-size: 35px;
+  line-height: 41px; }
+  @media (max-width: 1023px) {
+    h4 {
+      font-size: 29px;
+      line-height: 35px; } }
+
+h5 {
+  font-size: 30px;
+  line-height: 36px; }
+  @media (max-width: 1023px) {
+    h5 {
+      font-size: 25px;
+      line-height: 31px; } }
+
+h6 {
+  font-size: 25px;
+  line-height: 31px; }
+  @media (max-width: 1023px) {
+    h6 {
+      font-size: 20px;
+      line-height: 26px; } }
+
+.bg-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg-contain {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.full-container {
+  position: relative;
+  width: 100%; }
+
+.touch-visible {
+  overflow: hidden;
+  width: 0px;
+  height: 0px; }
+  @media (min-width: 0px) and (max-width: 959px) {
+    .touch .touch-visible {
+      width: auto;
+      height: auto; } }
+
+.no-touch-visible {
+  display: none; }
+  @media (min-width: 959px) {
+    .no-touch .no-touch-visible {
+      display: block; } }
+
+.centered-h {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.centered-v {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.bg-white {
+  background-color: white; }
+
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none; }
+
+.svg-container {
+  position: relative;
+  text-align: left; }
+  .svg-container svg {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .svg-container svg path {
+      transition: all 300ms; }
+
+* {
+  outline: none; }
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+html * {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+body {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  body #container-outer {
+    position: relative;
+    display: inline-block;
+    top: 100px;
+    left: 50%;
+    width: 810px;
+    height: 810px;
+    min-width: 810px;
+    min-height: 810px;
+    max-width: 810px;
+    max-height: 810px;
+    transform-origin: top left;
+    transform: scale(0.8); }
+    body #container-outer #container {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      left: -50%;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      overflow: hidden; }
+      body #container-outer #container #inner-container {
+        position: absolute;
+        display: inline-block;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        perspective: 2300px;
+        transform-style: preserve-3d;
+        -webkit-backface-visibility: visible;
+                backface-visibility: visible;
+        z-index: 1; }
+        body #container-outer #container #inner-container .define-angle-container {
+          position: absolute;
+          display: inline-block;
+          top: 62%;
+          left: 28%;
+          width: 16%;
+          height: 16%;
+          transform: rotateX(-28deg) rotateY(-23deg) rotateZ(-1deg) translateZ(100px);
+          transform-origin: bottom;
+          -webkit-backface-visibility: visible;
+                  backface-visibility: visible;
+          transform-style: preserve-3d;
+          transition: transform 16000ms; }
+          body #container-outer #container #inner-container .define-angle-container .cubes-row {
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            transform-origin: bottom;
+            -webkit-backface-visibility: visible;
+                    backface-visibility: visible;
+            transform-style: preserve-3d; }
+            body #container-outer #container #inner-container .define-angle-container .cubes-row .cube {
+              position: absolute;
+              display: inline-block;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              transform-origin: right;
+              -webkit-backface-visibility: visible;
+                      backface-visibility: visible;
+              transform-style: preserve-3d; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: visible;
+                        backface-visibility: visible;
+                transform-style: preserve-3d;
+                border-bottom: solid 3px white;
+                border-left: solid 3px white; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face .bar-base {
+                  position: relative;
+                  width: 26%;
+                  height: 26%;
+                  -webkit-backface-visibility: visible;
+                          backface-visibility: visible;
+                  transform-style: preserve-3d; }
+                  body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face .bar-base::before, body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face .bar-base::after {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    -webkit-backface-visibility: visible;
+                            backface-visibility: visible; }
+                  body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face .bar-base::before {
+                    right: 0px;
+                    width: 10000%;
+                    height: 100%;
+                    transform-origin: right;
+                    transform: rotateY(-90deg) translateX(70%);
+                    border-bottom: solid 3px white; }
+                  body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face .bar-base::after {
+                    left: 0;
+                    width: 100%;
+                    height: 10000%;
+                    transform-origin: top;
+                    transform: rotateX(-90deg) translateY(-70%);
+                    border-left: solid 3px white; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face.face-front {
+                  background-color: #000000; }
+                  body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face.face-front .bar-base::before {
+                    width: 1700%;
+                    transform: rotateY(-90deg) translateX(100%);
+                    background-color: #272727; }
+                  body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face.face-front .bar-base::after {
+                    height: 1700%;
+                    transform: rotateX(-90deg) translateY(-100%);
+                    background-color: #393939; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face.face-top {
+                  transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translateZ(0px);
+                  transform-origin: top;
+                  background-color: #393939; }
+                  body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face.face-top .bar-base::before {
+                    background-color: #272727; }
+                  body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face.face-top .bar-base::after {
+                    background-color: #000000; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face.face-side {
+                  transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translateZ(0px);
+                  transform-origin: right;
+                  background-color: #272727; }
+                  body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face.face-side .bar-base::before {
+                    background-color: #000000; }
+                  body #container-outer #container #inner-container .define-angle-container .cubes-row .cube .face.face-side .bar-base::after {
+                    background-color: #393939; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-1 .face.face-front {
+                background-color: #242424; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-1 .face.face-front .bar-base::before {
+                  background: linear-gradient(90deg, #4b4b4b 0%, #272727 100%); }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-1 .face.face-front .bar-base::after {
+                  background: linear-gradient(0deg, #5d5d5d 0%, #393939 100%); }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-1 .face.face-top {
+                background-color: #5d5d5d; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-1 .face.face-top .bar-base::before {
+                  background-color: #4b4b4b; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-1 .face.face-top .bar-base::after {
+                  background-color: #242424; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-1 .face.face-side {
+                background-color: #4b4b4b; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-1 .face.face-side .bar-base::before {
+                  background-color: #242424; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-1 .face.face-side .bar-base::after {
+                  background-color: #5d5d5d; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-2 .face.face-front {
+                background-color: #474747; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-2 .face.face-front .bar-base::before {
+                  background: linear-gradient(90deg, #6e6e6e 0%, #4b4b4b 100%); }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-2 .face.face-front .bar-base::after {
+                  background: linear-gradient(0deg, gray 0%, #5d5d5d 100%); }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-2 .face.face-top {
+                background-color: gray; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-2 .face.face-top .bar-base::before {
+                  background-color: #6e6e6e; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-2 .face.face-top .bar-base::after {
+                  background-color: #474747; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-2 .face.face-side {
+                background-color: #6e6e6e; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-2 .face.face-side .bar-base::before {
+                  background-color: #474747; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-2 .face.face-side .bar-base::after {
+                  background-color: gray; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-3 .face.face-front {
+                background-color: #6b6b6b; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-3 .face.face-front .bar-base::before {
+                  background: linear-gradient(90deg, #929292 0%, #6e6e6e 100%); }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-3 .face.face-front .bar-base::after {
+                  background: linear-gradient(0deg, #a4a4a4 0%, gray 100%); }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-3 .face.face-top {
+                background-color: #a4a4a4; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-3 .face.face-top .bar-base::before {
+                  background-color: #929292; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-3 .face.face-top .bar-base::after {
+                  background-color: #6b6b6b; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-3 .face.face-side {
+                background-color: #929292; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-3 .face.face-side .bar-base::before {
+                  background-color: #6b6b6b; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-3 .face.face-side .bar-base::after {
+                  background-color: #a4a4a4; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-4 .face.face-front {
+                background-color: #8f8f8f; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-4 .face.face-front .bar-base::before {
+                  background: linear-gradient(90deg, #b6b6b6 0%, #929292 100%); }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-4 .face.face-front .bar-base::after {
+                  background: linear-gradient(0deg, #c8c8c8 0%, #a4a4a4 100%); }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-4 .face.face-top {
+                background-color: #c8c8c8; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-4 .face.face-top .bar-base::before {
+                  background-color: #b6b6b6; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-4 .face.face-top .bar-base::after {
+                  background-color: #8f8f8f; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-4 .face.face-side {
+                background-color: #b6b6b6; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-4 .face.face-side .bar-base::before {
+                  background-color: #8f8f8f; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-4 .face.face-side .bar-base::after {
+                  background-color: #c8c8c8; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-5 .face.face-front {
+                background-color: #b3b3b3; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-5 .face.face-front .bar-base::before {
+                  background: linear-gradient(90deg, #dadada 0%, #b6b6b6 100%); }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-5 .face.face-front .bar-base::after {
+                  background: linear-gradient(0deg, #ececec 0%, #c8c8c8 100%); }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-5 .face.face-top {
+                background-color: #ececec; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-5 .face.face-top .bar-base::before {
+                  background-color: #dadada; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-5 .face.face-top .bar-base::after {
+                  background-color: #b3b3b3; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-5 .face.face-side {
+                background-color: #dadada; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-5 .face.face-side .bar-base::before {
+                  background-color: #b3b3b3; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-5 .face.face-side .bar-base::after {
+                  background-color: #ececec; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-6 .face.face-front {
+                background-color: #d6d6d6; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-6 .face.face-front .bar-base::before {
+                  background: linear-gradient(90deg, #fdfdfd 0%, #dadada 100%); }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-6 .face.face-front .bar-base::after {
+                  background: linear-gradient(0deg, white 0%, #ececec 100%); }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-6 .face.face-top {
+                background-color: white; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-6 .face.face-top .bar-base::before {
+                  background-color: #fdfdfd; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-6 .face.face-top .bar-base::after {
+                  background-color: #d6d6d6; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-6 .face.face-side {
+                background-color: #fdfdfd; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-6 .face.face-side .bar-base::before {
+                  background-color: #d6d6d6; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-6 .face.face-side .bar-base::after {
+                  background-color: white; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-7 .face.face-front {
+                background-color: #fafafa; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-7 .face.face-front .bar-base::before {
+                  background: linear-gradient(90deg, white 0%, #fdfdfd 100%); }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-7 .face.face-front .bar-base::after {
+                  background: linear-gradient(0deg, white 0%, white 100%); }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-7 .face.face-top {
+                background-color: white; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-7 .face.face-top .bar-base::before {
+                  background-color: white; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-7 .face.face-top .bar-base::after {
+                  background-color: #fafafa; }
+              body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-7 .face.face-side {
+                background-color: white; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-7 .face.face-side .bar-base::before {
+                  background-color: #fafafa; }
+                body #container-outer #container #inner-container .define-angle-container .cubes-row .cube.cube-7 .face.face-side .bar-base::after {
+                  background-color: white; }
+        body #container-outer #container #inner-container:hover .define-angle-container {
+          transform: rotateX(-12deg) rotateY(-14deg) rotateZ(-1deg) translateZ(500px) translateY(-400px); }
